@@ -1,8 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 22 23:20:14 2026
 
-@author: chris
+"""
+Chris Foltz
+
+This program scrapes a url provided by the user and saves the headlines (after string conversion) into a text file.
+
 """
 
 import requests
@@ -74,4 +75,5 @@ if __name__ == "__main__":
     else:
         print("Could not retrieve news from", url)
     with open(file_path, "w") as file:
+
         file.write(str(news))
